@@ -1,4 +1,30 @@
+@use "sass:map";
+
 $gap: 16px;
 
 $background: #FFFCF1;
 $lightgray: #aaa;
+
+// breakpoints
+// https://getbootstrap.com/docs/5.3/layout/breakpoints/#available-breakpoints
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1400px
+);
+
+$xxl_up: 'min-width: #{map.get($grid-breakpoints, 'xxl')}';
+$xl_up:  'min-width: #{map.get($grid-breakpoints, 'xl')}';
+$lg_up:  'min-width: #{map.get($grid-breakpoints, 'lg')}';
+$md_up:  'min-width: #{map.get($grid-breakpoints, 'md')}';
+$sm_up:  'max-width: #{map.get($grid-breakpoints, 'sm')}';
+$xs_up:  'max-width: #{map.get($grid-breakpoints, 'xs')}';
+
+$xxl_down: 'max-width: #{map.get($grid-breakpoints, 'xxl') - 1}';
+$xl_down:  'max-width: #{map.get($grid-breakpoints, 'xl') - 1}';
+$lg_down:  'max-width: #{map.get($grid-breakpoints, 'lg') - 1}';
+$md_down:  'max-width: #{map.get($grid-breakpoints, 'md') - 1}';
+$sm_down:  'max-width: #{map.get($grid-breakpoints, 'sm') - 1}';
