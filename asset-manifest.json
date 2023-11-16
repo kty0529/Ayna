@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/Ayna/static/css/main.6212d346.css",
+    "main.css": "/Ayna/static/css/main.edba7e27.css",
     "main.js": "/Ayna/static/js/main.01953709.js",
     "static/media/header-background.jpg": "/Ayna/static/media/header-background.91bf597af4434715a91b.jpg",
     "static/media/button-request.png": "/Ayna/static/media/button-request.1d08ea8f43eca2c7c40f.png",
@@ -8,11 +8,11 @@
     "index.html": "/Ayna/index.html",
     "static/media/ico-ios_share.svg": "/Ayna/static/media/ico-ios_share.b007627eca406be91f5f8e16582cf04e.svg",
     "static/media/ico-mail.svg": "/Ayna/static/media/ico-mail.6a4b7593bdf795fc2c3b02a35b6f766e.svg",
-    "main.6212d346.css.map": "/Ayna/static/css/main.6212d346.css.map",
+    "main.edba7e27.css.map": "/Ayna/static/css/main.edba7e27.css.map",
     "main.01953709.js.map": "/Ayna/static/js/main.01953709.js.map"
   },
   "entrypoints": [
-    "static/css/main.6212d346.css",
+    "static/css/main.edba7e27.css",
     "static/js/main.01953709.js"
   ]
 }
