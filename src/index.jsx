@@ -3,12 +3,16 @@ import ReactDOM from "react-dom/client";
 
 // assets
 import "./assets/scss/reset.scss";
+import "./assets/scss/common.scss";
+
+// pages
+import Home from "./pages/Home/Home";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
       <div className="container">
-        content
+        <Home />
       </div>
   </React.StrictMode>
 );
