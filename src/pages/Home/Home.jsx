@@ -2,10 +2,7 @@ import style from "./Home.module.scss";
 
 // Components
 import Header from "../../components/Header/Header";
-
-// Icons
-// import icoShare from "../../assets/svgs/ico-ios_share.svg";
-import icoMail from "../../assets/svgs/ico-mail.svg";
+import Footer from "../../components/Footer/Footer";
 
 // Images
 // import buttonDaangn from "../../assets/images/button-daangn.png";
@@ -60,15 +57,7 @@ function Home() {
         </ul>
       </main>
 
-      <footer id="footer">
-        <span className="copyright">ⓒ AYNAYOGA</span>
-        <a
-          className="contact"
-          href="mailto:yerindo8@gmail.com"
-          aria-label="문의하기">
-          <img src={icoMail} alt="이메일 아이콘" />
-        </a>
-      </footer>
+      <Footer />
     </div>
   );
 }

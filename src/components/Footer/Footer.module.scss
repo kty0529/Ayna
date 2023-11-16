@@ -1,0 +1,28 @@
+// import
+@import '../../assets/scss/helpers';
+
+// styles
+#footer {
+  display: flex;
+  height: 80px;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+
+  .copyright {
+    color: $lightgray;
+    font-size: 12px;
+    font-weight: 700;
+  }
+
+  .contact {
+    display: inline-flex;
+    width: 24px;
+    height: 24px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: $lightgray;
+    line-height: 0;
+  }
+}
