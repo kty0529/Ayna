@@ -1,3 +1,4 @@
+import * as config from "../../config";
 import style from "./Header.module.scss";
 
 // icons & images
@@ -37,7 +38,7 @@ function Header() {
         <input
           id="shareInput"
           type="text"
-          defaultValue="https://kty0529.github.io/aynayoga"
+          defaultValue={config.URL}
           style={{display: "none"}}
         />
       </div>
