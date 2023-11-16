@@ -16,6 +16,10 @@
     'title ryt'
   ;
 
+  @media ($sm_down) {
+    margin: 0 -#{$gap};
+  }
+
   &::after {
     position: absolute;
     top: 0;

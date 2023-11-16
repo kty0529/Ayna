@@ -1,3 +1,7 @@
+// import
+@import '../../assets/scss/helpers';
+
+// styles
 .button {
   display: flex;
   overflow: hidden;
@@ -8,8 +12,10 @@
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.05);
   transition: transform 0.2s;
 
-  &:hover {
-    transform: scale(1.03);
+  @media ($lg_up) {
+    &:hover {
+      transform: scale(1.03);
+    }
   }
 }
 
