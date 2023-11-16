@@ -9,12 +9,12 @@ import Footer from "../../components/Footer/Footer";
 
 function Home() {
   return (
-    <div className={style.home}>
+    <div id={style.home}>
       <Header />
 
-      <main id="main">
-        <div className="description">
-          매주 토요일 아침 10시, 요가 수업을 진행하고있어요.
+      <main id={style.main}>
+        <div className={style.description}>
+          <strong>매주 토요일 아침 10시</strong>, 요가 수업을 진행하고있어요.
           <br />
           자세한 내용은 인스타그램 하이라이트를 확인해주세요. 😊
         </div>
