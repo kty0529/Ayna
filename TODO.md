@@ -1,3 +1,3 @@
-- [ ] GitHub Pages 연결
+- [x] GitHub Pages 연결
+- [x] CRA deploy 설정
 - [ ] 도메인 구매 및 연결
-- [ ] CRA deploy 설정
