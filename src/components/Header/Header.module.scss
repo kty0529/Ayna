@@ -17,7 +17,12 @@
   ;
 
   @media ($sm_down) {
+    border-radius: 0;
     margin: 0 -#{$gap};
+    padding: {
+      right: $gap * 2;
+      left: $gap * 2;
+    }
   }
 
   &::after {

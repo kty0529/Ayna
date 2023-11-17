@@ -1,3 +1,5 @@
+@use 'sass:math';
+
 // import
 @import './helpers';
 
@@ -6,12 +8,18 @@ body {
   background-color: $background;
   font-family: 'Noto Sans KR', sans-serif;
   font-weight: 400;
+  overflow-wrap: break-word;
+  word-break: keep-all;
 }
 
 .container {
   max-width: 460px + $gap * 2;
-  padding: 0 $gap;
+  padding: 0 math.div($gap, 2);
   margin: 0 auto;
+
+  @media ($sm_down) {
+    max-width: initial;
+  }
 }
 
 .NanumMyeongjo {
