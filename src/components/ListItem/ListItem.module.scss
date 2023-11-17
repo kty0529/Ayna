@@ -6,6 +6,7 @@
   display: grid;
   overflow: hidden;
   min-height: 80px;
+  align-items: center;
   justify-content: space-between;
   border-radius: 4px;
   background-color: #fff;
@@ -22,17 +23,12 @@
 }
 
 .thumbnail {
-  display: block;
-  width: 80px;
-  flex: 0 0 auto;
-  object-fit: cover;
+  width: 40px;
+  align-self: center;
+  justify-self: center;
 }
 
 .text {
-  display: flex;
-  flex: 1 1 auto;
-  align-items: center;
-  justify-content: center;
   font-size: 14px;
   font-weight: 400;
   grid-column: 2;
