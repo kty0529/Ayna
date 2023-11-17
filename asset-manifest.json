@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/static/css/main.fbd59466.css",
-    "main.js": "/static/js/main.02b656d7.js",
-    "static/media/header-background.jpg": "/static/media/header-background.91bf597af4434715a91b.jpg",
-    "static/media/button-request.png": "/static/media/button-request.1d08ea8f43eca2c7c40f.png",
-    "static/media/symbol-E-RYT200.png": "/static/media/symbol-E-RYT200.1ca1aebaf51a9cbd4c20.png",
-    "index.html": "/index.html",
-    "static/media/ico-ios_share.svg": "/static/media/ico-ios_share.b007627eca406be91f5f8e16582cf04e.svg",
-    "static/media/ico-mail.svg": "/static/media/ico-mail.6a4b7593bdf795fc2c3b02a35b6f766e.svg",
-    "main.fbd59466.css.map": "/static/css/main.fbd59466.css.map",
-    "main.02b656d7.js.map": "/static/js/main.02b656d7.js.map"
+    "main.css": "./static/css/main.a2816d38.css",
+    "main.js": "./static/js/main.291342a8.js",
+    "static/media/header-background.jpg": "./static/media/header-background.91bf597af4434715a91b.jpg",
+    "static/media/button-request.png": "./static/media/button-request.1d08ea8f43eca2c7c40f.png",
+    "static/media/symbol-E-RYT200.png": "./static/media/symbol-E-RYT200.1ca1aebaf51a9cbd4c20.png",
+    "index.html": "./index.html",
+    "static/media/ico-ios_share.svg": "./static/media/ico-ios_share.b007627eca406be91f5f8e16582cf04e.svg",
+    "static/media/ico-mail.svg": "./static/media/ico-mail.6a4b7593bdf795fc2c3b02a35b6f766e.svg",
+    "main.a2816d38.css.map": "./static/css/main.a2816d38.css.map",
+    "main.291342a8.js.map": "./static/js/main.291342a8.js.map"
   },
   "entrypoints": [
-    "static/css/main.fbd59466.css",
-    "static/js/main.02b656d7.js"
+    "static/css/main.a2816d38.css",
+    "static/js/main.291342a8.js"
   ]
 }
