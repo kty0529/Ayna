@@ -1,3 +1,4 @@
+import * as config from "../../config";
 import style from "./Home.module.scss";
 
 // Components
@@ -26,14 +27,14 @@ function Home() {
           <li>
             <ListItem
               thumbnail={buttonInstagram}
-              link="https://www.instagram.com/ayna.yoga/"
+              link={config.SNS.Instagram}
               text="인스타그램"
             />
           </li>
           <li>
             <ListItem
               thumbnail={buttonDaangn}
-              link="https://www.daangn.com/kr/groups/2dgeOvoA"
+              link={config.SNS.Daangn}
               text="당근 모임"
             />
           </li>
@@ -41,7 +42,7 @@ function Home() {
           <li>
             <ListItem
               thumbnail={buttonRequest}
-              link="https://forms.gle/Yd631qdMPsmb27De9"
+              link={config.GOOGLE_FORM}
               text="<strong>🌻 토요 모닝 요가 신청하기</strong>"
             />
           </li>
