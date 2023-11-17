@@ -2,7 +2,7 @@
   "name": "ayna",
   "version": "0.1.0",
   "private": true,
-  "homepage": "./",
+  "homepage": "https://ayna.yoga",
   "dependencies": {
     "@stylelint/postcss-css-in-js": "^0.38.0",
     "@testing-library/jest-dom": "^5.17.0",
