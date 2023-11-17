@@ -8,7 +8,6 @@ import ListItem from "../../components/ListItem/ListItem";
 // Images
 import buttonDaangn from "../../assets/images/button-daangn.png";
 import buttonInstagram from "../../assets/images/button-instagram.png";
-import buttonKakaoTalk from "../../assets/images/button-kakaotalk.png";
 import buttonRequest from "../../assets/images/button-request.png";
 
 function Home() {
