@@ -9,7 +9,6 @@ import ListItem from "../../components/ListItem/ListItem";
 // Images
 import buttonDaangn from "../../assets/images/button-daangn.png";
 import buttonInstagram from "../../assets/images/button-instagram.png";
-import buttonRequest from "../../assets/images/button-request.png";
 
 function Home() {
   return (
@@ -41,7 +40,6 @@ function Home() {
           <li className={style.separator}></li>
           <li>
             <ListItem
-              thumbnail={buttonRequest}
               link={config.GOOGLE_FORM}
               text="<strong>🌻 토요 모닝 요가 신청하기</strong>"
             />
