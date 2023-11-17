@@ -38,13 +38,6 @@ function Home() {
               text="당근 모임"
             />
           </li>
-          <li>
-            <ListItem
-              thumbnail={buttonKakaoTalk}
-              link="https://open.kakao.com/o/gl9KOGNf"
-              text="카카오톡 오픈채팅방"
-            />
-          </li>
           <li className={style.separator}></li>
           <li>
             <ListItem
