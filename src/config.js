@@ -5,4 +5,4 @@ export const SNS = {
   Daangn: "https://www.daangn.com/kr/groups/2dgeOvoA",
 };
 
-export const GOOGLE_FORM = "https://forms.gle/1k2K6f2e3ZD6QWZj8";
+export const GOOGLE_FORM = "https://forms.gle/Yd631qdMPsmb27De9";
