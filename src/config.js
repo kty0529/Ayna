@@ -7,7 +7,7 @@ export const SNS = {
 
 export const GOOGLE_FORM = "https://forms.gle/Yd631qdMPsmb27De9";
 
-// Images
+// Buttons
 import InstagramImage from "./assets/images/button-instagram.png";
 import DaangnImage from "./assets/images/button-daangn.png";
 
