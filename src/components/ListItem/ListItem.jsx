@@ -4,17 +4,17 @@ interface Props {
   thumbnail?: string;
   link: string;
   text: string;
-  className?: string;
+  target?: string;
 }
 
 function ListItem(props: Props) {
-  const className = props.className ? " " + props.className : "";
+  const target = props.target ? props.target : "_self";
 
   return (
     <a
-      className={style.button + className}
+      className={style.button}
       href={props.link}
-      target="_blank"
+      target={target}
       rel="noreferrer"
     >
       {

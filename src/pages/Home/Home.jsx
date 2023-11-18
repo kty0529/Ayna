@@ -6,10 +6,6 @@ import Header from "../../components/Header/Header";
 import Footer from "../../components/Footer/Footer";
 import ListItem from "../../components/ListItem/ListItem";
 
-// Images
-import buttonDaangn from "../../assets/images/button-daangn.png";
-import buttonInstagram from "../../assets/images/button-instagram.png";
-
 function Home() {
   return (
     <div id={style.home}>
@@ -23,27 +19,23 @@ function Home() {
         </div>
 
         <ul className={style.lists}>
-          <li>
-            <ListItem
-              thumbnail={buttonInstagram}
-              link={config.SNS.Instagram}
-              text="인스타그램"
-            />
-          </li>
-          <li>
-            <ListItem
-              thumbnail={buttonDaangn}
-              link={config.SNS.Daangn}
-              text="당근 모임"
-            />
-          </li>
-          <li className={style.separator}></li>
-          <li>
-            <ListItem
-              link={config.GOOGLE_FORM}
-              text="<strong>🌻 토요 모닝 요가 신청하기</strong>"
-            />
-          </li>
+          {
+            config.ButtonData.map((item, index) => {
+              if (item.separator) {
+                return (
+                  <li key={index} className={style.separator}></li>
+                )
+              }
+
+              return (
+                <li key={index}>
+                  <ListItem
+                    {...item}
+                  />
+                </li>
+              )
+            })
+          }
         </ul>
       </main>
 
