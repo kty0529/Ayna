@@ -8,7 +8,7 @@ import ListItem from "../../components/ListItem/ListItem";
 
 function Home() {
   return (
-    <div id={style.home}>
+    <>
       <Header />
 
       <main id={style.main}>
@@ -39,7 +39,7 @@ function Home() {
       </main>
 
       <Footer />
-    </div>
+    </>
   );
 }
 
