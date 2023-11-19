@@ -21,7 +21,7 @@ function Header() {
   return (
     <header id={style.header}>
       <div className={style.title}>
-        <h1 className={style.text + " NanumMyeongjo"}>아이나 요가</h1>
+        <h1 className={style.text}>아이나 요가</h1>
         <i className={style.emoji}>🧘🏻‍♀️</i>
       </div>
 

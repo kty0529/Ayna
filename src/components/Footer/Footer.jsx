@@ -7,7 +7,7 @@ import icoMail from "../../assets/svgs/ico-mail.svg";
 function Footer() {
   return (
     <footer id={style.footer}>
-      <span className={style.copyright + " NanumMyeongjo"}>ⓒ AYNAYOGA</span>
+      <span className={style.copyright}>ⓒ AYNAYOGA</span>
       <a
         className={style.contact}
         href={"mailto:"+config.EMAIL}

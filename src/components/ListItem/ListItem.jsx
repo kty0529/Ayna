@@ -27,7 +27,7 @@ function ListItem(props: Props) {
       }
 
       <span
-        className={style.text + " NanumMyeongjo"}
+        className={style.text}
         dangerouslySetInnerHTML={{ __html: props.text }}
       />
     </a>

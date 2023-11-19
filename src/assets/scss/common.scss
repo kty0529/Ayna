@@ -6,8 +6,9 @@
 // common
 body {
   background-color: $background;
-  font-family: 'Noto Sans KR', sans-serif;
+  font-family: 'Nanum Myeongjo', sans-serif;
   font-weight: 400;
+  line-height: 160%;
   overflow-wrap: break-word;
   word-break: keep-all;
 }
@@ -20,8 +21,4 @@ body {
   @media ($sm_down) {
     max-width: initial;
   }
-}
-
-.NanumMyeongjo {
-  font-family: 'Nanum Myeongjo', serif;
 }
