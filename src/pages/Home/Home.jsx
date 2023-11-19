@@ -14,7 +14,7 @@ function Home() {
       <main id={style.main}>
         <div className={style.description}>
           <strong>원데이클래스, 소그룹 PT</strong> 요가 수업을 진행하고있어요.
-          <br />자세한 내용은 인스타그램 하이라이트를 확인해주세요. 😊
+          <br />자세한 내용은 인스타그램을 확인해주세요. 😊
         </div>
 
         <ul className={style.lists}>
