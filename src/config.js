@@ -29,7 +29,8 @@ export const ButtonData = [
   },
   {
     link: GOOGLE_FORM,
-    text: "<strong>🌻 토요 모닝 요가 신청하기</strong>",
+    text: "<strong>🌻 토요 모닝 요가</strong>",
+    subtext: "원데이 클래스 신청하기",
     target: "_blank"
   }
 ]
