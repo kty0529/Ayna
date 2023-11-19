@@ -11,6 +11,7 @@
   border-radius: 0 0 4px 4px;
   background-image: url('../../assets/images/header-background.jpg');
   background-position: center;
+  background-size: cover;
   grid-template-areas:
     'title share'
     'title ryt'
@@ -26,6 +27,8 @@
   }
 
   &::after {
+    @include disable;
+
     position: absolute;
     top: 0;
     left: 0;
