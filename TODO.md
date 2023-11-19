@@ -1,6 +1,6 @@
 - [ ] Share 썸네일 이미지 제작
 - [ ] 구글 애널리틱스 버튼 클릭 이벤트 추적
-- [ ] favicon 변경
+- [x] favicon 변경
 - [x] 하드코딩된 버튼 코드 반복문 활용
 - [x] GitHub Pages 연결
 - [x] CRA deploy 설정
