@@ -4,6 +4,7 @@ interface Props {
   thumbnail?: string;
   link: string;
   text: string;
+  subtext?: string;
   target?: string;
 }
 
@@ -26,10 +27,13 @@ function ListItem(props: Props) {
         />
       }
 
-      <span
-        className={style.text}
-        dangerouslySetInnerHTML={{ __html: props.text }}
-      />
+      <div className={style.text}>
+        <span
+          className={style.maintext}
+          dangerouslySetInnerHTML={{ __html: props.text }}
+        />
+        { props.subtext && <span className={style.subtext}>{props.subtext}</span> }
+      </div>
     </a>
   );
 }
