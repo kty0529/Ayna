@@ -7,6 +7,7 @@ export const SNS = {
 };
 
 export const GOOGLE_FORM = "https://forms.gle/Yd631qdMPsmb27De9";
+export const GOOGLE_PT_FORM = "https://forms.gle/k9fyRCVsJNfB5AGaA";
 
 // Buttons
 import InstagramImage from "./assets/images/button-instagram.png";
@@ -39,6 +40,12 @@ export const ButtonData = [
     link: GOOGLE_FORM,
     text: "<strong>🌻 토요 모닝 요가</strong>",
     subtext: "원데이 클래스 신청하기",
+    target: "_blank"
+  },
+  {
+    link: GOOGLE_PT_FORM,
+    text: "<strong>🍀 요가 수업 문의</strong>",
+    subtext: "1:1 / 소그룹 클래스 신청하기",
     target: "_blank"
   }
 ]
