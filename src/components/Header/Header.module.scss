@@ -72,21 +72,4 @@
     grid-area: ryt;
     justify-self: flex-end;
   }
-
-  .share {
-    position: relative;
-    z-index: 2;
-    align-self: flex-start;
-    grid-area: share;
-    justify-self: flex-end;
-
-    button {
-      width: 34px;
-      height: 34px;
-      border-radius: 34px;
-      background: rgba(#FFFCF1, 0.2);
-      box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.05);
-      line-height: 0;
-    }
-  }
 }
