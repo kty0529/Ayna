@@ -1,17 +1,16 @@
 {
   "files": {
-    "main.css": "/static/css/main.4e22ce1a.css",
-    "main.js": "/static/js/main.e0e32bc5.js",
+    "main.css": "/static/css/main.9d47a55b.css",
+    "main.js": "/static/js/main.d5f68359.js",
     "static/media/header-background.jpg": "/static/media/header-background.91bf597af4434715a91b.jpg",
     "static/media/symbol-E-RYT200.png": "/static/media/symbol-E-RYT200.1ca1aebaf51a9cbd4c20.png",
     "index.html": "/index.html",
-    "static/media/ico-ios_share.svg": "/static/media/ico-ios_share.b007627eca406be91f5f8e16582cf04e.svg",
     "static/media/ico-mail.svg": "/static/media/ico-mail.8525d109c331d35a21769407c6f60511.svg",
-    "main.4e22ce1a.css.map": "/static/css/main.4e22ce1a.css.map",
-    "main.e0e32bc5.js.map": "/static/js/main.e0e32bc5.js.map"
+    "main.9d47a55b.css.map": "/static/css/main.9d47a55b.css.map",
+    "main.d5f68359.js.map": "/static/js/main.d5f68359.js.map"
   },
   "entrypoints": [
-    "static/css/main.4e22ce1a.css",
-    "static/js/main.e0e32bc5.js"
+    "static/css/main.9d47a55b.css",
+    "static/js/main.d5f68359.js"
   ]
 }
