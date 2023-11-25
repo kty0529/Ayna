@@ -1,6 +1,6 @@
 {
-  "short_name": "아이나 요가 🧘🏻‍♀️",
-  "name": "아이나 요가 🧘🏻‍♀️",
+  "short_name": "아이나 요가",
+  "name": "아이나 요가",
   "icons": [
     {
       "src": "favicon.ico",
@@ -8,12 +8,12 @@
       "type": "image/x-icon"
     },
     {
-      "src": "favicon.png",
+      "src": "app_icon.png",
       "type": "image/png",
       "sizes": "192x192"
     },
     {
-      "src": "favicon.png",
+      "src": "app_icon.png",
       "type": "image/png",
       "sizes": "512x512"
     }
