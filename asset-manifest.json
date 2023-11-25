@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/static/css/main.d1dfbc57.css",
-    "main.js": "/static/js/main.7ce0c7d4.js",
+    "main.js": "/static/js/main.6d246baa.js",
     "static/media/header-background.jpg": "/static/media/header-background.91bf597af4434715a91b.jpg",
     "static/media/symbol-E-RYT200.png": "/static/media/symbol-E-RYT200.1ca1aebaf51a9cbd4c20.png",
     "index.html": "/index.html",
     "static/media/ico-ios_share.svg": "/static/media/ico-ios_share.b007627eca406be91f5f8e16582cf04e.svg",
     "static/media/ico-mail.svg": "/static/media/ico-mail.8525d109c331d35a21769407c6f60511.svg",
     "main.d1dfbc57.css.map": "/static/css/main.d1dfbc57.css.map",
-    "main.7ce0c7d4.js.map": "/static/js/main.7ce0c7d4.js.map"
+    "main.6d246baa.js.map": "/static/js/main.6d246baa.js.map"
   },
   "entrypoints": [
     "static/css/main.d1dfbc57.css",
-    "static/js/main.7ce0c7d4.js"
+    "static/js/main.6d246baa.js"
   ]
 }
