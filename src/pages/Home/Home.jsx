@@ -14,6 +14,7 @@ function Home() {
       <main id={style.main}>
         <div className={style.description}>
           <strong>나를 비추는 거울, 아이나 요가</strong>입니다.
+          <br />
           <br />요가를 통해 나의 몸과 마음 상태를 바라보고,
           <br />나를 사랑하는 방법을 배워가요.
         </div>
