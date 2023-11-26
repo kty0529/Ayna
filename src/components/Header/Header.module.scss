@@ -4,18 +4,16 @@
 // styles
 #header {
   position: relative;
-  display: grid;
+  display: flex;
   overflow: hidden;
   height: 250px;
+  align-items: flex-end;
+  justify-content: space-between;
   padding: $gap;
   border-radius: 0 0 4px 4px;
   background-image: url('../../assets/images/header-background.jpg');
   background-position: center;
   background-size: cover;
-  grid-template-areas:
-    'title share'
-    'title ryt'
-  ;
 
   @media ($sm_down) {
     border-radius: 0;
@@ -41,23 +39,11 @@
   .title {
     position: relative;
     z-index: 2;
-    display: flex;
-    align-items: center;
-    align-self: flex-end;
-    gap: 4px;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 900;
     grid-area: title;
     word-break: keep-all;
-
-    .text {
-      color: #fff;
-      font-size: 20px;
-      font-weight: 900;
-    }
-
-    .emoji {
-      font-size: 24px;
-      font-style: normal;
-    }
   }
 
   .ryt {
