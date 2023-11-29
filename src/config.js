@@ -2,7 +2,7 @@ export const URL = "https://ayna.yoga";
 export const EMAIL = "contact@ayna.yoga";
 export const SNS = {
   Instagram: "https://www.instagram.com/ayna.yoga/",
-  Daangn: "https://www.daangn.com/kr/groups/2dgeOvoA",
+  // Daangn: "https://www.daangn.com/kr/groups/2dgeOvoA",
   Somoim: "https://somoim.friendscube.com/g/59fc4e66-6a77-11ee-8b97-0a3943fb38031",
 };
 
@@ -11,7 +11,7 @@ export const GOOGLE_PT_FORM = "https://forms.gle/k9fyRCVsJNfB5AGaA";
 
 // Buttons
 import InstagramImage from "./assets/images/button-instagram.png";
-import DaangnImage from "./assets/images/button-daangn.png";
+// import DaangnImage from "./assets/images/button-daangn.png";
 import SomoimImage from "./assets/images/button-somoim.png";
 
 export const ButtonData = [
@@ -21,12 +21,12 @@ export const ButtonData = [
     text: "인스타그램",
     target: "_blank"
   },
-  {
-    thumbnail: DaangnImage,
-    link: SNS.Daangn,
-    text: "당근마켓 동네생활",
-    target: "_blank"
-  },
+  // {
+  //   thumbnail: DaangnImage,
+  //   link: SNS.Daangn,
+  //   text: "당근마켓 동네생활",
+  //   target: "_blank"
+  // },
   {
     thumbnail: SomoimImage,
     link: SNS.Somoim,
