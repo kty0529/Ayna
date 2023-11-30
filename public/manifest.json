@@ -1,25 +1,25 @@
 {
-  "short_name": "아이나 요가 🧘🏻‍♀️",
-  "name": "아이나 요가 🧘🏻‍♀️",
+  "short_name": "아이나 요가",
+  "name": "아이나 요가",
   "icons": [
     {
-      "src": "favicon.ico",
+      "src": "assets/images/favicon.ico",
       "sizes": "64x64 32x32 24x24 16x16",
       "type": "image/x-icon"
     },
     {
-      "src": "favicon.png",
+      "src": "assets/images/app_icon.png",
       "type": "image/png",
       "sizes": "192x192"
     },
     {
-      "src": "favicon.png",
+      "src": "assets/images/app_icon.png",
       "type": "image/png",
       "sizes": "512x512"
     }
   ],
-  "start_url": "https://ayna.yoga",
+  "start_url": "./",
   "display": "standalone",
-  "theme_color": "#FFFCF1",
-  "background_color": "#FFFCF1"
+  "theme_color": "#887C75",
+  "background_color": "#887C75"
 }
