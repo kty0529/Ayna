@@ -1,4 +1,4 @@
-import * as config from "../../config";
+// import * as config from "../../config";
 import style from "./Home.module.scss";
 import {useQuery} from "react-query";
 
@@ -8,16 +8,22 @@ import Footer from "../../components/Footer/Footer";
 import ListItem from "../../components/ListItem/ListItem";
 
 function Home() {
-  const {isLoading, data} = useQuery("buttonData", async () => {
+  const {isLoading, data} = useQuery("fetchButtonData", async () => {
     return await fetch(process.env.REACT_APP_NOTION_API)
       .then(res => res.json())
   });
 
 
-  let reverseData = [];
   if ( ! isLoading ) {
-    console.log(data.results);
-    reverseData = [...data.results].reverse();
+    // Order 순서대로 정렬
+    data.results = [...data.results].sort((a, b) => {
+      return a.properties?.Order?.number - b.properties?.Order?.number;
+    });
+
+    // Display가 true인 것만 필터링
+    data.results = data.results.filter(item => {
+      return item.properties?.Display?.checkbox === true;
+    });
   }
 
 
@@ -35,35 +41,25 @@ function Home() {
 
         {
           isLoading ? (
-            <div>로딩중...</div>
+            <div className={style.loading}>
+              버튼을 불러오고 있습니다.
+            </div>
           ) : (
             <ul className={style.lists}>
               {
-                reverseData.map((item, index) => {
-                  console.log(index, "Display: ", item.properties?.Display?.checbox);
-                  console.log(index, "ID: ", item.properties?.ID?.unique_id?.number, item?.properties?.ID?.unique_id?.prefix);
-                  console.log(index, "Name: ", item.properties?.Name?.title[0]?.plain_text);
-                  console.log(index, "NameBoder: ", item.properties?.NameBolder?.checkbox);
-                  console.log(index, "SubTitle: ", item.properties?.SubTitle?.rich_text[0]?.plain_text);
-                  console.log(index, "Thumbnail: ", item.properties?.Thumbnail?.files[0]?.name, item.properties?.Thumbnail?.files[0]?.type, item.properties?.Thumbnail?.files[0]?.file?.url);
-                  console.log(index, "Type: ", item.properties?.Type?.select?.name);
-                  console.log(index, "URL: ", item.properties?.URL?.url);
-                  console.log(index, "URLTarget: ", item.properties?.URLTarget?.select?.name);
-                })
-              }
-
-              {
-                config.ButtonData.map((item, index) => {
-                  if (item.separator) {
+                data.results.map((item, index) => {
+                  // Separator인 경우
+                  if ( item.properties?.Type?.select?.name === "Separator" ) {
                     return (
                       <li key={index} className={style.separator}></li>
                     )
                   }
 
+                  // Button인 경우
                   return (
                     <li key={index}>
                       <ListItem
-                        {...item}
+                        {...item.properties}
                       />
                     </li>
                   )
