@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/static/css/main.b1fd0698.css",
-    "main.js": "/static/js/main.034a1283.js",
+    "main.css": "/static/css/main.96bbeaf9.css",
+    "main.js": "/static/js/main.25fa54cf.js",
     "static/media/header-background.jpg": "/static/media/header-background.91bf597af4434715a91b.jpg",
     "static/media/symbol-E-RYT200.png": "/static/media/symbol-E-RYT200.1ca1aebaf51a9cbd4c20.png",
     "index.html": "/index.html",
     "static/media/ico-mail.svg": "/static/media/ico-mail.8525d109c331d35a21769407c6f60511.svg",
-    "main.b1fd0698.css.map": "/static/css/main.b1fd0698.css.map",
-    "main.034a1283.js.map": "/static/js/main.034a1283.js.map"
+    "main.96bbeaf9.css.map": "/static/css/main.96bbeaf9.css.map",
+    "main.25fa54cf.js.map": "/static/js/main.25fa54cf.js.map"
   },
   "entrypoints": [
-    "static/css/main.b1fd0698.css",
-    "static/js/main.034a1283.js"
+    "static/css/main.96bbeaf9.css",
+    "static/js/main.25fa54cf.js"
   ]
 }
