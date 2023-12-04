@@ -1,5 +1,6 @@
-import * as config from "../../config";
+// import * as config from "../../config";
 import style from "./Home.module.scss";
+import {useQuery} from "react-query";
 
 // Components
 import Header from "../../components/Header/Header";
@@ -7,6 +8,25 @@ import Footer from "../../components/Footer/Footer";
 import ListItem from "../../components/ListItem/ListItem";
 
 function Home() {
+  const {isLoading, data} = useQuery("fetchButtonData", async () => {
+    return await fetch(process.env.REACT_APP_NOTION_API)
+      .then(res => res.json())
+  });
+
+
+  if ( ! isLoading ) {
+    // Order 순서대로 정렬
+    data.results = [...data.results].sort((a, b) => {
+      return a.properties?.Order?.number - b.properties?.Order?.number;
+    });
+
+    // Display가 true인 것만 필터링
+    data.results = data.results.filter(item => {
+      return item.properties?.Display?.checkbox === true;
+    });
+  }
+
+
   return (
     <>
       <Header />
@@ -19,25 +39,35 @@ function Home() {
           <br />나를 사랑하는 방법을 배워가요.
         </div>
 
-        <ul className={style.lists}>
-          {
-            config.ButtonData.map((item, index) => {
-              if (item.separator) {
-                return (
-                  <li key={index} className={style.separator}></li>
-                )
-              }
+        {
+          isLoading ? (
+            <div className={style.loading}>
+              버튼을 불러오고 있습니다.
+            </div>
+          ) : (
+            <ul className={style.lists}>
+              {
+                data.results.map((item, index) => {
+                  // Separator인 경우
+                  if ( item.properties?.Type?.select?.name === "Separator" ) {
+                    return (
+                      <li key={index} className={style.separator}></li>
+                    )
+                  }
 
-              return (
-                <li key={index}>
-                  <ListItem
-                    {...item}
-                  />
-                </li>
-              )
-            })
-          }
-        </ul>
+                  // Button인 경우
+                  return (
+                    <li key={index}>
+                      <ListItem
+                        {...item.properties}
+                      />
+                    </li>
+                  )
+                })
+              }
+            </ul>
+          )
+        }
       </main>
 
       <Footer />
