@@ -4,11 +4,6 @@ interface Props {
   URL: {
     url: string;
   };
-  URLTarget: {
-    select: {
-      name: string;
-    };
-  };
   Thumbnail: {
     files: {
       file: {
@@ -21,6 +16,9 @@ interface Props {
       plain_text: string;
     }[];
   };
+  NameBolder: {
+    checkbox: boolean;
+  };
   SubTitle: {
     rich_text: {
       plain_text: string;
@@ -29,10 +27,7 @@ interface Props {
 }
 
 function ListItem(props: Props) {
-  const URL = props.URL.url;
-  const URLTarget = props.URLTarget.select.name;
-  const target = URLTarget === "새 창" ? "_blank" : "_self";
-
+  const url = props.URL.url;
   const thumbnail = props.Thumbnail.files[0]?.file.url;
   const buttonText = props.Name.title[0].plain_text;
   const buttonBold = props.NameBolder?.checkbox;
@@ -41,8 +36,8 @@ function ListItem(props: Props) {
   return (
     <a
       className={style.button}
-      href={URL}
-      target={target}
+      href={url}
+      target="_blank"
       rel="noreferrer"
     >
       {
